@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
-import { AWSS3ServiceService } from '../awss3-service.service';
+// import { AWSS3ServiceService } from '../awss3-service.service';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
 
