@@ -1,0 +1,125 @@
+
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 600px 1fr;  
+  height: 100vh;   
+  width: auto;                            
+}
+
+.left-documents-container {
+  padding: 20px;                               
+}
+
+.main-documents-container {
+  padding: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-size: 16px; 
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+.btn.primary {
+  background-color: #007bff;
+}
+
+.btn.primary:hover {
+  background-color: #0056b3;
+}
+
+ 
+.document-actions button.edit {
+  background-color: #28a745;    
+  color: white;
+}
+
+.document-actions button.edit:hover {
+  background-color: #218838;    
+}
+
+ 
+.document-actions button.delete {
+  background-color: #dc3545;    
+  color: white;
+}
+
+.document-actions button.delete:hover {
+  background-color: #c82333;   
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.file-label {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+}
+
+.document-name {
+  font-size: 16px;
+}
+
+.document-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.document-actions {
+  margin-top: 10px;
+}

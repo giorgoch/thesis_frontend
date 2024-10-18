@@ -1,0 +1,202 @@
+
+  
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.nav {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+.left-sidebar {
+  background-color: #f4f4f4;
+  padding: 1em;
+  width: 200px;
+}
+
+.left-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.left-sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.left-sidebar ul li a:hover {
+  color: #007bff;
+}
+
+
+main {
+  flex: 1;
+  padding: 2em;
+  background-color: #fff;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: auto;
+}
+
+
+.file-upload-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-file-input {
+  display: none;
+}
+
+.file-label {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.upload-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #218838;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.document-item {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.document-item h4 {
+  margin: 0 0 10px 0;
+}
+
+.document-item p {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.document-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+ 
+@media (min-width: 768px) {
+  .left-sidebar {
+    width: auto;
+  }
+
+  main {
+    width: calc(100% - 200px);
+  }
+}

@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+
+.nav {
+  background-color: #333;
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+p span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+footer {
+   background-color:  #333; 
+
+  color: white;
+  text-align: center;
+ height: auto;
+  padding: 1em;
+  margin-top: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+}
+
+.left-sidebar, .right-sidebar {
+  background-color: #f4f4f4;
+  padding: 1em;
+  flex: 0 0 200px; 
+  height: 800px;
+}
+
+.main-containt {
+  flex: 1; 
+  padding: 1em;
+  background-color: #fff;
+  height: 800px;
+}
+main {
+  flex: 1;
+  padding: 1em;
+  background-color: #fff;
+  width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "http://dmsbucketthesis.localhost:4566",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  
